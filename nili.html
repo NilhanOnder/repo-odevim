@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nilhan Html Sayfası</title>
+
+    <style>
+        p {
+            /*- Sayfa için Google Font kullanımı */
+            font-family: 'Roboto', sans-serif;
+        }
+
+        table {
+            color: white;
+            padding: 0;
+            border: 1px solid black;
+        }
+
+        table th {
+            padding: 5px;
+            font-weight: 700;
+            border: 1px solid black;
+            background-color: black;
+        }
+
+        table td {
+            padding: 5px;
+            text-align: center;
+            border: 1px solid rgb(255, 255, 255);
+            background-color: #571285;
+        }
+
+        .italic {
+            font-style: italic;
+            text-decoration: overline;
+            font-weight: 700;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <h1> Başlık 1</h1>
+
+    <!-- paragraf kullanımı -->
+
+    <p>
+        Nilhan Önder bu işi çözmeye söz verdi. <span class="italic">Lorem ipsum dolor sit
+            amet.</span> 
+    <blockquote>
+        "Lorem ipsum dolor sit , aliquid exercitationem perferendis est commodi. Sint quidem omnis ullam quis
+        blanditiis!"
+    </blockquote>
+    Saepe ut voluptatem blanditiis,
+    odit quaerat minima accusantium nam, officiis totam alias nemo, non optio quam.
+    </p>
+
+    <!--  İçindekiler bölümü ve tıklandığında gitmesi -->
+
+    <a href="a.html">Bana tıkla</a>
+
+
+    <!--  En az bir tane table olacak -->
+
+    <table>
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+    </table>
+
+    <!-- En az bir tane resim ekle -->
+    <img src="images/download.jpg" alt="Bu bir dünya resmidir" title="Dünya resmi">
+
+    <form>
+        <!-- your@email.com yerine kendi mail adresimizi yazıyoruz. -->
+        <div class="input-block">
+            <label for="contact_author">
+                <strong>Ad Soyad</strong> (gerekli)</label>
+            <input type="text" name="contact_author" id="contact_author" required>
+        </div>
+        <div class="input-block">
+            <label for="_replyto">
+                <strong>E-Posta Adresi</strong> (gerekli)</label>
+            <input type="email" name="_replyto" id="_replyto" required>
+        </div>
+        <div class="input-block">
+            <label for="contact_subject">
+                <strong>İleti Konusu</strong> (gerekli)</label>
+            <input type="text" name="contact_subject" id="contact_subject" required>
+        </div>
+        <div class="textarea-block">
+            <label for="contact_content">
+                <strong>İleti</strong> (gerekli)</label>
+            <textarea name="contact_content" id="contact_content" required></textarea>
+        </div>
+        <input type="hidden" name="_next" value="https://site.io/thanks.html">
+        <!-- Form formspree.io adresine gönderildikten sonra tekrar sitenize dönüş yapılarak sitenizdeki thanks.html dosyasının görüntülenmesini sağlıyor. -->
+        <input type="submit" value="GÖNDER">
+    </form>
+
+    <ul>
+        <li>nilhan</li>
+        <li>nilhan</li>
+        <li>nilhan</li>
+        <li>nilhan</li>
+        <li>nilhan</li>
+    </ul>
+
+
+
+
+
+</body>
+
+</html>
